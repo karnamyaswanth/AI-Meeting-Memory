@@ -268,6 +268,15 @@ Meeting Recording → Transcript → Summary → Action Items → Decisions
 
 This makes meeting information easier to understand and helps users identify important tasks quickly.
 
+# 🤖 AI Meeting Memory
+
+Transform meeting recordings into intelligent, searchable insights.
+
+## 📸 Application Screenshot
+
+<img width="905" height="515" alt="Screenshot 2026-09-01 171428" src="https://github.com/user-attachments/assets/ae9aa6f8-772e-40ca-9043-06ca887de3ea" />
+
+
 ## 🌟 Key Highlights
 
 - Full-Stack AI Application
