@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+venv/
+.venv/
+backend/venv/
+ai/venv/
+
+# Node
+node_modules/
+frontend/node_modules/
+
+# Audio uploads
+uploads/
+*.wav
+*.mp3
+*.m4a
+*.ogg
+*.flac
+
+# Generated output
+output/
+
+# Large AI/runtime files
+ai/ffmpeg.exe
+*.pt
+*.pth
+*.bin
+*.dll
+*.pyd
+*.safetensors
+
+# Environment
+.env
+.env.*
+
+# IDE
+.vscode/
+.idea/

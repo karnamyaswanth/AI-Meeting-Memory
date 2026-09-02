@@ -1,0 +1,533 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+
+  background:
+    linear-gradient(
+      135deg,
+      #eef2ff,
+      #f8fafc
+    );
+
+  color: #172033;
+}
+
+button,
+input {
+  font-family: inherit;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+
+/* ================================
+   HEADER
+================================ */
+
+.header {
+  padding: 35px 7%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: white;
+
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.header h1 {
+  margin: 0;
+
+  font-size: 32px;
+  font-weight: 800;
+
+  letter-spacing: -1px;
+}
+
+.header p {
+  margin-top: 8px;
+
+  color: #64748b;
+
+  font-size: 15px;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  padding: 10px 16px;
+
+  border-radius: 30px;
+
+  background: #ecfdf5;
+
+  color: #047857;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.status-dot {
+  width: 9px;
+  height: 9px;
+
+  border-radius: 50%;
+
+  background: #10b981;
+}
+
+
+/* ================================
+   CONTAINER
+================================ */
+
+.container {
+  width: 90%;
+  max-width: 1050px;
+
+  margin: 45px auto;
+}
+
+
+/* ================================
+   UPLOAD CARD
+================================ */
+
+.upload-card {
+  background: white;
+
+  border-radius: 22px;
+
+  padding: 45px;
+
+  text-align: center;
+
+  border: 1px solid #e2e8f0;
+
+  box-shadow:
+    0 15px 40px
+    rgba(15, 23, 42, 0.08);
+}
+
+.upload-icon {
+  width: 75px;
+  height: 75px;
+
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 20px;
+
+  background: #eef2ff;
+
+  font-size: 36px;
+}
+
+.upload-card h2 {
+  margin-top: 22px;
+
+  font-size: 25px;
+}
+
+.upload-card p {
+  color: #64748b;
+}
+
+
+/* ================================
+   FILE INPUT
+================================ */
+
+.file-input {
+  display: inline-flex;
+
+  margin-top: 20px;
+
+  padding: 14px 25px;
+
+  border-radius: 12px;
+
+  background: #f1f5f9;
+
+  border: 2px dashed #cbd5e1;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.file-input:hover {
+  border-color: #6366f1;
+
+  background: #eef2ff;
+}
+
+.file-input input {
+  display: none;
+}
+
+.file-input span {
+  font-weight: 600;
+
+  color: #475569;
+}
+
+.file-info {
+  margin-top: 15px;
+
+  color: #475569;
+
+  font-size: 14px;
+}
+
+
+/* ================================
+   BUTTON
+================================ */
+
+.process-button {
+  display: block;
+
+  width: 100%;
+
+  margin-top: 25px;
+
+  padding: 15px;
+
+  border: none;
+
+  border-radius: 12px;
+
+  background: #4f46e5;
+
+  color: white;
+
+  font-size: 16px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.process-button:hover {
+  background: #4338ca;
+
+  transform: translateY(-1px);
+}
+
+.process-button:disabled {
+  background: #a5b4fc;
+
+  cursor: not-allowed;
+
+  transform: none;
+}
+
+
+/* ================================
+   LOADING
+================================ */
+
+.loading-box {
+  margin-top: 25px;
+
+  padding: 20px;
+
+  border-radius: 12px;
+
+  background: #eef2ff;
+}
+
+.loading-box p {
+  margin-bottom: 5px;
+
+  color: #3730a3;
+
+  font-weight: 600;
+}
+
+.loading-box small {
+  color: #6366f1;
+}
+
+.spinner {
+  width: 32px;
+  height: 32px;
+
+  margin: auto;
+
+  border: 4px solid #c7d2fe;
+
+  border-top-color: #4f46e5;
+
+  border-radius: 50%;
+
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* ================================
+   ERROR
+================================ */
+
+.error-box {
+  margin-top: 20px;
+
+  padding: 15px;
+
+  border-radius: 10px;
+
+  background: #fef2f2;
+
+  color: #b91c1c;
+
+  border: 1px solid #fecaca;
+}
+
+
+/* ================================
+   RESULTS
+================================ */
+
+.results {
+  margin-top: 35px;
+}
+
+.success-message {
+  padding: 16px;
+
+  margin-bottom: 20px;
+
+  border-radius: 12px;
+
+  background: #ecfdf5;
+
+  border: 1px solid #a7f3d0;
+
+  color: #047857;
+
+  font-weight: 700;
+
+  text-align: center;
+}
+
+
+/* ================================
+   RESULT CARD
+================================ */
+
+.result-card {
+  background: white;
+
+  margin-bottom: 22px;
+
+  padding: 28px;
+
+  border-radius: 18px;
+
+  border: 1px solid #e2e8f0;
+
+  box-shadow:
+    0 8px 25px
+    rgba(15, 23, 42, 0.05);
+}
+
+.summary-card {
+  border-left: 5px solid #4f46e5;
+
+  background: #f8faff;
+}
+
+.card-title {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 18px;
+}
+
+.card-title span {
+  font-size: 25px;
+}
+
+.card-title h2 {
+  margin: 0;
+
+  font-size: 21px;
+}
+
+.result-card p {
+  line-height: 1.7;
+
+  color: #475569;
+}
+
+
+/* ================================
+   TRANSCRIPT
+================================ */
+
+.transcript {
+  padding: 20px;
+
+  background: #f8fafc;
+
+  border-radius: 12px;
+
+  line-height: 1.8;
+
+  color: #334155;
+
+  white-space: pre-wrap;
+}
+
+
+/* ================================
+   LIST
+================================ */
+
+.item-list {
+  list-style: none;
+
+  padding: 0;
+
+  margin: 0;
+}
+
+.item-list li {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 14px;
+
+  padding: 15px 0;
+
+  border-bottom: 1px solid #e2e8f0;
+
+  line-height: 1.6;
+}
+
+.item-list li:last-child {
+  border-bottom: none;
+}
+
+.number {
+  min-width: 30px;
+  height: 30px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #eef2ff;
+
+  color: #4338ca;
+
+  font-weight: 700;
+}
+
+.empty {
+  padding: 15px;
+
+  background: #f8fafc;
+
+  border-radius: 10px;
+}
+
+
+/* ================================
+   FILE CARD
+================================ */
+
+.file-card {
+  background: #f8fafc;
+}
+
+.file-card p {
+  word-break: break-word;
+
+  font-size: 14px;
+}
+
+
+/* ================================
+   FOOTER
+================================ */
+
+footer {
+  padding: 30px;
+
+  text-align: center;
+
+  color: #64748b;
+
+  font-size: 14px;
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 700px) {
+
+  .header {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 20px;
+
+    padding: 25px;
+  }
+
+  .header h1 {
+    font-size: 25px;
+  }
+
+  .container {
+    width: 94%;
+
+    margin-top: 25px;
+  }
+
+  .upload-card {
+    padding: 28px 20px;
+  }
+
+  .result-card {
+    padding: 20px;
+  }
+
+}

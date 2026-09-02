@@ -1,0 +1,44 @@
+@"
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# AI models / caches
+*.pt
+*.pth
+*.bin
+*.safetensors
+.cache/
+huggingface/
+models/
+
+# Node
+node_modules/
+dist/
+
+# Environment files
+.env
+.env.*
+
+# Meeting uploads and generated results
+uploads/*
+output/*
+*.wav
+*.mp3
+*.m4a
+*.mp4
+
+# Logs
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+"@ | Set-Content .gitignore
